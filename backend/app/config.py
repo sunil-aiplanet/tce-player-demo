@@ -23,6 +23,9 @@ class Settings(BaseSettings):
             "http://127.0.0.1:3000",
             "http://localhost:5173",
             "http://127.0.0.1:5173",
+            # "http://13.203.193.73:5173",
+            # "http://13.203.193.73:80",
+            # "http://13.203.193.73",
         ]
 
     @property

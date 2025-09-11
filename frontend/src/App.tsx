@@ -143,11 +143,12 @@ function App() {
         setIsFetchingAssets(true);
         const ids = [
           "2EEDD094-9067-4BA5-8D34-B63FAC83A80D",
-          "4dd22862-764d-44a1-941a-98329a47f44b",
+          // "4dd22862-764d-44a1-941a-98329a47f44b",
           "059ac1d8-4076-404c-b325-52f0b0e9b0ab",
           "6EC7A7C1-55A1-4D9E-9271-FF527505BDFC",
-          "29e283ca-f97e-4414-b832-27837aed49db",
-          "64d1764d-b101-42b4-8a9c-0509514cf409",
+          // "29e283ca-f97e-4414-b832-27837aed49db",
+          // "64d1764d-b101-42b4-8a9c-0509514cf409",
+          "e17048d5-d759-466a-9155-73269d9139a7",
         ];
 
         const response = await api.get<Array<IAssetResponse>>("/api/assets", {

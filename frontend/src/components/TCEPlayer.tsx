@@ -14,11 +14,8 @@ const TCEPlayer = ({
   expiresIn: number;
   asset: IAsset | null;
 }) => {
-  const environment = import.meta.env.MODE;
-  const isDevelopment = environment === "development";
-
   const [isResourcesLoaded, setIsResourcesLoaded] = useState(false);
-  const [_isPlayerInitialized, setIsPlayerInitialized] = useState(false);
+  const [, setIsPlayerInitialized] = useState(false);
 
   const playerContainerRef = useRef(null);
   const tcePlayerIdRef = useRef(null);
@@ -113,7 +110,7 @@ const TCEPlayer = ({
             overflowX: "hidden",
             overflowY: "hidden",
           },
-          baseUrl: isDevelopment ? "" : "https://ce-dev-azvasa.devstudi.com",
+          baseUrl: "",
           gateway: "",
           minEraserArea: 50,
         },
