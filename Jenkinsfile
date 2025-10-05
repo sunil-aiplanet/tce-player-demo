@@ -117,7 +117,7 @@ pipeline {
                         nginx:latest
                 """
                 
-                echo "Deployment completed successfully...!"
+                echo "Deployment completed successfully!"
             }
         }
     }
